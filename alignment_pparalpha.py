@@ -12,7 +12,7 @@ REFERENCE_PDB = "1k7l"
 CUTOFF = 1.0                     # Angstroms, same as your `within 1.0`
 OUTPUT_CSV = "conserved_waters_alpha.csv"
 LOG_TXT = "conserved_waters_log_alpha.txt"
-LOCAL_CIF_DIR = "C:/Users/Ogurur/ppar/data/raw/PPARalpha"          # e.g. "data/raw/PPARgamma" - if set,
+LOCAL_CIF_DIR = "C:/Users/Ogurur/ppar_bioinfo/data/raw/PPARalpha"          # e.g. "data/raw/PPARgamma" - if set,
                                   # loads local files instead of cmd.fetch
 
 # Structures to process. Add every PDB ID from your run here.

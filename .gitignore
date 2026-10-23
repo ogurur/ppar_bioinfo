@@ -4,3 +4,5 @@ data
 conserved*.txt
 .venv
 *.docx
+*.png
+plot_step_a.py
