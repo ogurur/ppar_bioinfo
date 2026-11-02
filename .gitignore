@@ -6,3 +6,4 @@ conserved*.txt
 *.docx
 *.png
 plot_step_a.py
+water_contacts.py
