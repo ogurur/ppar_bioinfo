@@ -1,12 +1,9 @@
 # PPAR Water Conservation Analysis
 
-BIOL363 Structural Bioinformatics Project 2026. Supervisor: F. Molnár, Nazarbayev University.
-Team: Raniya Gaini, Nuradil Amangeldi, Nassiba Omarkhanova, Kamila Nurzhanova.
-
 The project finds crystallographic water molecules that sit at the same position in most
 PPARα, PPARγ and PPARδ ligand-binding-domain (LBD) structures in the PDB, and checks whether
 they are real (ordered, resolution-independent, not one lab's repeats) and where they sit in
-the protein. See `PPAR_Water_Conservation_Project (1).docx` for the full project description.
+the protein. See `PPAR_Water_Conservation_Project.docx` for the full project description.
 
 ---
 
