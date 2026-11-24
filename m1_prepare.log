@@ -1,0 +1,16 @@
+== PPARα: parsed 79 structures
+   references: ['1k7l', '6kax', '6lxa']
+   waters kept (≤5 Å of protein): 8112 in 71 structures
+   core Cα RMSD to 1K7L: median 0.53 Å, max 0.78, >2 Å: 0 (median 104 Cα pairs)
+   full Cα RMSD: median 1.01 Å, max 4.20
+== PPARγ: parsed 379 structures
+   references: ['1prg', '9f7w', '8bf1']
+   waters kept (≤5 Å of protein): 29969 in 361 structures
+   core Cα RMSD to 1PRG: median 0.52 Å, max 2.63, >2 Å: 15 (median 104 Cα pairs)
+   full Cα RMSD: median 1.00 Å, max 7.58
+== PPARδ: parsed 55 structures
+   references: ['1gwx', '5u3q', '5y7x']
+   waters kept (≤5 Å of protein): 5171 in 49 structures
+   core Cα RMSD to 1GWX: median 0.36 Å, max 0.90, >2 Å: 0 (median 104 Cα pairs)
+   full Cα RMSD: median 1.65 Å, max 2.89
+Saved to /sessions/rcw-01ajycegvvnzajzspq8jeesc/mnt/ppar_bioinfo/data/processed/method1
