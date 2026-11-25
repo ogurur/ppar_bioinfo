@@ -1,8 +1,10 @@
-biopython==1.85
+# analysis scripts (run with plain Python, e.g. the .venv)
+biopython>=1.85
 numpy>=1.20
 pandas>=1.3
-requests>=2.25
 scipy>=1.7
+scikit-learn>=1.2
 matplotlib>=3.4
-pandas>=1.3
-scipy>=1.7
+requests>=2.25
+# PyMOL is needed only for alignment_ppar_lbd*.py and the .pml figures; install it separately:
+#   conda install -c conda-forge pymol-open-source

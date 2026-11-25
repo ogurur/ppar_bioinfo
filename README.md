@@ -1,9 +1,12 @@
 # PPAR Water Conservation Analysis
 
+BIOL363 Structural Bioinformatics Project 2026. Supervisor: F. Molnár, Nazarbayev University.
+Team: Raniya Gaini, Nuradil Amangeldi, Nassiba Omarkhanova, Kamila Nurzhanova.
+
 The project finds crystallographic water molecules that sit at the same position in most
 PPARα, PPARγ and PPARδ ligand-binding-domain (LBD) structures in the PDB, and checks whether
 they are real (ordered, resolution-independent, not one lab's repeats) and where they sit in
-the protein. See `PPAR_Water_Conservation_Project.docx` for the full project description.
+the protein. See `PPAR_Water_Conservation_Project (1).docx` for the full project description.
 
 ---
 
@@ -13,7 +16,7 @@ Two environments are used:
 
 | What | Environment | Install |
 |---|---|---|
-| All analysis scripts (everything except the PyMOL alignment) | `.venv` (or any Python 3.9+) | `pip install biopython numpy pandas scipy scikit-learn matplotlib requests` |
+| All analysis scripts (everything except the PyMOL alignment) | `.venv` (or any Python 3.9+) | `pip install -r requirements.txt` |
 | `alignment_ppar_lbd*.py` and viewing `.pml` figures | PyMOL 3.x (conda `ppar` env or PyMOL GUI) | `conda install -c conda-forge pymol-open-source` |
 
 Run every script **from the project folder** (`C:\Users\Ogurur\ppar_bioinfo`), e.g.
@@ -32,6 +35,7 @@ data/
   results/                             result tables of the analysis scripts
   results/method1/                     Method 1 cluster atlas and sensitivity tables
 figures/                               all plots (.png, 300 DPI) and PyMOL scripts (.pml, .pdb)
+archive/                               superseded scripts and their results (see the end of this file)
 lbd_chains_PPAR<subtype>.csv           which chain of each entry is the PPAR LBD
 conserved_align_waters_<subtype>[_05|_2].csv   reference-based matched waters (1 / 0.5 / 2 Å)
 ```
@@ -98,15 +102,17 @@ Run in this order; no PyMOL needed.
 
 ---
 
-## Older scripts (kept for reference, superseded)
+## `archive/` – earlier versions (superseded, kept for reference)
 
-| Script | Status |
-|---|---|
-| `alignment_pparalpha.py`, `alignment_ppargamma.py`, `alignment_ppardelta.py` | First per-subtype PyMOL scripts (all chains, `cmd.super`). Replaced by `alignment_ppar_lbd.py`. Their outputs are `conserved_waters_<subtype>.csv`. |
-| `summarize.py` | Summary of the old `conserved_waters_<subtype>.csv` files with hierarchical clustering at 1 Å → `water_sites_<subtype>.csv`, `water_summary.csv`. Replaced by `plot_water_conservation.py`. |
-| `plot_step_a.py` | Early QC plots (RMSD histogram, waters per chain, density projections) from the old CSVs → `figures/01_…05_*.png`. |
-| `test.py` | Checks that the raw-data folder path exists. |
-| `VENV_SETUP.md` | Notes from the first virtual-environment setup. |
+Nothing in the current pipeline reads these files. They show how the September results were made.
+
+| Path | What it was | Replaced by |
+|---|---|---|
+| `archive/scripts/alignment_pparalpha.py`, `alignment_ppargamma.py`, `alignment_ppardelta.py` | First per-subtype PyMOL scripts (all chains, `cmd.super`) | `alignment_ppar_lbd.py` |
+| `archive/scripts/summarize.py` | Summary of the old CSVs with hierarchical clustering at 1 Å | `plot_water_conservation.py` |
+| `archive/scripts/plot_step_a.py` | Early QC plots (RMSD histogram, waters per chain, density projections) | Method 1 RMSD figure and current plots |
+| `archive/results/` | Outputs of the scripts above: `conserved_waters_<subtype>.csv` and logs, `water_sites_<subtype>.csv`, `water_summary.csv` | `conserved_align_waters_*.csv`, `data/results/` |
+| `archive/figures/` | `01_…05_*.png`, `rmsd_outliers.csv`, `waters_per_chain.csv` from `plot_step_a.py` | `figures/` |
 
 ---
 
