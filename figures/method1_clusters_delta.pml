@@ -1,4 +1,4 @@
-# Method 1 clusters (>=30%) on the 1GWX reference; sphere colour/size = conservation
+# Method 1 clusters (>=30%) on the 1GWX reference, sphere colour and size = conservation
 # run from the project folder:  @figures/method1_clusters_delta.pml
 reinitialize
 load data/raw/PPARdelta/1gwx.cif, ref

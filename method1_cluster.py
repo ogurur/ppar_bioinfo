@@ -337,7 +337,7 @@ def write_pdb(key, ref, at):
     with open(os.path.join(FIG, f"method1_clusters_{key}.pdb"), "w") as f:
         f.write("\n".join(lines) + "\nEND\n")
     folder = {"alpha": "PPARalpha", "gamma": "PPARgamma", "delta": "PPARdelta"}[key]
-    pml = f"""# Method 1 clusters (>=30%) on the {ref.upper()} reference; sphere colour/size = conservation
+    pml = f"""# Method 1 clusters (>=30%) on the {ref.upper()} reference, sphere colour and size = conservation
 # run from the project folder:  @figures/method1_clusters_{key}.pml
 reinitialize
 load data/raw/{folder}/{ref}.cif, ref

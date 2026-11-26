@@ -218,7 +218,7 @@ def figures(out):
         ax.axvline(HIGH, color=GRID, linewidth=1)
         ax.set_xlim(0, 100)
         ax.set_ylim(0, 3)
-        ax.set_title(f"{SUB[k][0]}   ρ = {st['rho']:.2f}, {p_text(st['p'])}", loc="left",
+        ax.set_title(f"{SUB[k][0]}   median: high {st['med_high']:.2f} vs rare {st['med_rare']:.2f}", loc="left",
                      fontsize=10, color=INK)
         ax.set_xlabel("Cluster conservation (% of structures)", fontsize=9, color=INK)
         style(ax)
@@ -239,11 +239,11 @@ def figures(out):
         axes[0, j].scatter(x, ps.pct_conserved_occupied, s=12, color=ACC, alpha=0.55,
                            edgecolors="white", linewidths=0.3, zorder=3)
         axes[0, j].set_ylim(-3, 103)
-        axes[0, j].set_title(f"{SUB[k][0]}   ρ = {st['rho_res']:.2f}, {p_text(st['p_res'])}",
+        axes[0, j].set_title(f"{SUB[k][0]}",
                              loc="left", fontsize=10, color=INK)
         axes[1, j].scatter(x, ps.n_waters_shell, s=12, color=MUTED, alpha=0.6,
                            edgecolors="white", linewidths=0.3, zorder=3)
-        axes[1, j].set_title(f"{SUB[k][0]}   ρ = {st['rho_all']:.2f}, {p_text(st['p_all'])}",
+        axes[1, j].set_title(f"{SUB[k][0]}",
                              loc="left", fontsize=10, color=INK)
         axes[1, j].set_xlabel("Resolution (Å, lower = better)", fontsize=9, color=INK)
         for i in range(2):

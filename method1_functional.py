@@ -300,7 +300,7 @@ def write_pml(key, ref, raw, region_res, t):
             lines.append(f'label sites and resi {n}, "{r.C}"')
     lines += ["set label_color, black", "deselect", "orient ref",
               "# orange sticks = pocket, light orange = AF-2 / coactivator groove,",
-              "# pale cyan = RXR interface, violet = selectivity residues;",
+              "# pale cyan = RXR interface, violet = selectivity residues,",
               "# red spheres = high (>70%), yellow-orange = moderate (30-70%), labelled if near a region"]
     with open(os.path.join(FIG, f"m1_functional_{key}.pml"), "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")

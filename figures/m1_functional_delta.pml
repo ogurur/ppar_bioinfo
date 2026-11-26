@@ -318,5 +318,5 @@ set label_color, black
 deselect
 orient ref
 # orange sticks = pocket, light orange = AF-2 / coactivator groove,
-# pale cyan = RXR interface, violet = selectivity residues;
+# pale cyan = RXR interface, violet = selectivity residues,
 # red spheres = high (>70%), yellow-orange = moderate (30-70%), labelled if near a region

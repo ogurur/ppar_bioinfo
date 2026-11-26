@@ -1,4 +1,4 @@
-# Method 1 clusters (>=30%) on the 1K7L reference; sphere colour/size = conservation
+# Method 1 clusters (>=30%) on the 1K7L reference, sphere colour and size = conservation
 # run from the project folder:  @figures/method1_clusters_alpha.pml
 reinitialize
 load data/raw/PPARalpha/1k7l.cif, ref
